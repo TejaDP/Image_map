@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+    <head>
+        <title> imagemapping</title>
+    </head>
+    <style>
+        h1{ text-align: center; -webkit-text-fill-color:goldenrod; background-color: navy;}
+        h2{ text-align: center; -webkit-text-fill-color:skyblue}
+        img{ border:3px solid powderblue;}
+    </style>
+    <body>
+        <h1> VILLIVAKKAM , CHENNAI </h1>
+        <h2> TEJA D P - 25018004</h2>
+        <img src ="{% static 'map.jpg' %}" , usemap="#imgmap" height="80%" width="100%">
+        <map name="#imgmap">
+        <area shape="rect" coords="430,540,115,550" alt="Ractangle" href="leg.html">
+        <area shape="rect" coords="360,425,67,434" alt="Ractangle" href="lucas.html">
+        <area shape="rect" coords="1286,263,1293,331" title="Ractangle" href="ags.html">
+         <area shape="rect" coords="1277,79,1038,87" alt="Ractangle" href="rail.html">
+        <area shape="rect" coords="1196,683,873,686" alt="Ractangle" href="icf.html">
+        </map>
+    </body>
+</html>
